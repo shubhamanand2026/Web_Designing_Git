@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form with Table</title>
+</head>
+
+<body>
+
+    <h1>Form with Table</h1>
+
+    <form method="post" action="2nd_page.html" onsubmit="validFunction()">
+        <table border="1">
+            <tr>
+                <td><label for="fname">First Name:</label></td>
+                <td><input type="text" id="fname" name="fname"></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name:</label></td>
+                <td><input type="text" id="lname" name="lname"></td>
+            </tr>
+            <tr>
+                <td><label for="date">Date of Birth:</label></td>
+                <td><input type="date" id="date" name="date"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password"></td>
+            </tr>
+            <tr>
+                <td><label for="Mobile Number">Mobile Number:</label></td>
+                <td><input type="number" id="Mobile Number" name="Mobile Number"></td>
+            </tr>
+            <tr>
+                <td><label for="Gender">Gender:</label></td>
+                <td>Male<input type="radio" id="Gender" name="Gender">
+                    Female<input type="radio" id="Gender" name="Gender"></td>
+            </tr>
+            <tr>
+                <td><label for="Address">Address:</label></td>
+                <td><textarea id="Address" name="Address" rows="4" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="city">city:</label></td>
+                <td><input type="text" id="city" name="city"></td>
+            </tr>
+            <tr>
+                <td><label for="State">State:</label></td>
+                <td><input type="text" id="state" name="state"></td>
+            </tr>
+            <tr>
+            <tr>
+                <td><label for="Country">Country:</label></td>
+                <td><input type="text" id="Country" name="Country"></td>
+            </tr>
+            <tr>
+                <td><label for="Pin Code">Pin Code:</label></td>
+                <td><input type="number" id="Pin Code" name="Pin Code"></td>
+            </tr>
+
+            <td><label for="country">Country:</label></td>
+            <td>
+                <select id="country" name="country">
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td><label for="comments">Comments:</label></td>
+                <td><textarea id="comments" name="comments" rows="4" cols="40"></textarea></td>
+            </tr>
+        </table>
+
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validFunction() {
+            alert("Function is Working");
+        }
+    </script>
+
+</body>
+
+</html>
