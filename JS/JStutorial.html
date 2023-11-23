@@ -36,11 +36,15 @@
             LastName: "Anand",
             RollNo: "2200290130157",
             Bracnh: "IT",
-            EmailID: "shubhamanand10122003@gmail.com"
+            EmailID: "shubhamanand10122003@gmail.com",
+            fullname: function () {
+                return this.FirstName+this.LastName
+            }
         };
 
         // document.getElementById("ab").innerHTML = statement.FirstName;
-        console.log(document.getElementById("ab").innerHTML = statement.FirstName);
+        // console.log(document.getElementById("ab").innerHTML = "The Details of Student is: " + statement.FirstName + " " + statement.LastName + " " + statement.RollNo + " " + statement.Bracnh + " " + statement.EmailID);
+        console.log(document.getElementById("ab").innerHTML = statement.fullname());
     </script>
 </body>
 
